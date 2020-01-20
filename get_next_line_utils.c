@@ -6,7 +6,7 @@
 /*   By: motoure <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 10:33:39 by motoure           #+#    #+#             */
-/*   Updated: 2020/01/20 10:33:42 by motoure          ###   ########.fr       */
+/*   Updated: 2020/01/20 10:39:59 by motoure          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ void	*ft_realloc(void *ptr, size_t size)
 	return (return_value);
 }
 
-void	check_last_line(char **line, char **stack)
+int		check_last_line(char **line, char **stack)
 {
 	if (c_len(*stack, '\0') > -1 && c_len(*stack, ENDL) != 0)
 	{

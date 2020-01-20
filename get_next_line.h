@@ -6,7 +6,7 @@
 /*   By: motoure <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 10:17:59 by motoure           #+#    #+#             */
-/*   Updated: 2020/01/20 10:28:20 by motoure          ###   ########.fr       */
+/*   Updated: 2020/01/20 10:40:48 by motoure          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 # include <stdlib.h>
 # include <fcntl.h>
 
-void	check_last_line(char **line, char **stack);
+int		check_last_line(char **line, char **stack);
 void	*ft_realloc(void *ptr, size_t size);
 void	ft_memsub(void **dst, void *src, size_t index, int max);
 int		c_len(char *str, char c);
