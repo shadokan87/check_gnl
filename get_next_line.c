@@ -6,7 +6,7 @@
 /*   By: motoure <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 09:15:29 by motoure           #+#    #+#             */
-/*   Updated: 2020/01/20 09:29:00 by motoure          ###   ########.fr       */
+/*   Updated: 2020/01/20 10:17:35 by motoure          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 int	get_next_line(int fd, char **line)
 {
 	static char *stack[4094];
-	char buff[BUFFER_SIZE + 1];
-	int len;
-	int file;
+	char		buff[BUFFER_SIZE + 1];
+	int			len;
+	int			file;
 
 	if (fd < 0 || !line || BUFFER_SIZE <= 0)
 		return (-1);
