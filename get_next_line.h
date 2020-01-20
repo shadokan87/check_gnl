@@ -1,0 +1,19 @@
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
+
+# define ENDL '\n'
+# include <unistd.h>
+# include <sys/types.h>
+# include <sys/uio.h>
+# include <stdlib.h>
+# include <fcntl.h>
+# include <stdio.h>
+# include <string.h>
+//# include "Memd/mem.h"
+
+void	*ft_realloc(void *ptr, size_t size);
+void	ft_memsub(void **dst, void *src, size_t index, int max);
+int		c_len(char *str, char c);
+int		return_value(char **line, char **stack);
+int		get_next_line(int fd, char **line);
+#endif
